@@ -1,0 +1,95 @@
+class program {
+define turnright()
+{
+ iterate(3)
+ {
+   turnleft();
+ }//iterate
+}
+//define
+define tresbeeperL1()
+{
+ iterate(5)
+ {
+ move();
+ iterate(3)
+ {
+   putbeeper();
+ }//iterate
+}//iterate
+tresbeeperLT();
+}
+define tresbeeperLT ()
+{
+ turnright();
+ iterate(2)
+ {
+ iterate(4)
+ {
+ move();
+ iterate(3)
+ {
+ putbeeper();
+ }//iterate
+ }//iterate
+  turnright();
+}
+  iterate(3)
+  {
+   move();
+   iterate(3)
+   {
+    putbeeper();
+    }
+    }
+    turnright();
+}
+define dosbeeperL1()
+{
+ iterate(3)
+ {
+   move();
+   iterate(2)
+   {
+    putbeeper();
+    }
+  }
+  turnright();
+  }
+define dosbeeperLT()
+{ 
+ iterate(2)
+ {
+  move();
+  iterate(2)
+  {
+   putbeeper();
+   }
+ }
+  turnright();
+  iterate(2)
+  {
+  move();
+  putbeeper();
+  putbeeper();
+  }
+  turnright();
+  move();
+  putbeeper();
+  putbeeper();
+  turnright();
+  move();
+  putbeeper();
+ }
+define trampas()
+ {
+  tresbeeperL1(); 
+  dosbeeperL1();
+  dosbeeperLT();
+ }
+    program () {
+        // TODO poner codigo aqui
+        trampas();
+        turnoff();
+    }
+}

@@ -1,0 +1,14 @@
+class program {
+define carrera()
+{
+ iterate(10)
+ {
+ move();
+ }
+}
+    program () {
+        // TODO poner codigo aqui
+        carrera();
+        turnoff();
+    }
+}

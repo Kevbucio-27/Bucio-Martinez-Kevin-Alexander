@@ -1,0 +1,16 @@
+class program {
+define cultiva()
+{
+  if (noBeepersInBeeperBag)
+  {
+   turnoff();
+  }
+  putbeeper();
+  move();
+  cultiva();
+}
+    program () {
+        // TODO poner codigo aqui
+        cultiva();
+    }
+}
